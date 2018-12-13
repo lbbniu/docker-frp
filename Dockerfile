@@ -12,4 +12,4 @@ EXPOSE 7000
 EXPOSE 7500
 EXPOSE 80
 EXPOSE 443
-CMD ['./frps','-c','./frps.ini']
+CMD ['/server/frp/frps','-c','/server/frp/frps.ini']
