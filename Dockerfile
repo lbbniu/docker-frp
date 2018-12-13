@@ -2,7 +2,7 @@ FROM alpine
 MAINTAINER lbbniu <lbbniu@qq.com>
 VOLUME ['/server']
 WORKDIR /server
-RUN apt add wget \
+RUN apk add wget \
     && wget https://github.com/fatedier/frp/releases/download/v0.22.0/frp_0.22.0_linux_amd64.tar.gz \
     && tar zxvf frp_0.22.0_linux_amd64.tar.gz \
     && mv frp_0.22.0_linux_amd64 frp
